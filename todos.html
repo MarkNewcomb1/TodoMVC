@@ -4,17 +4,28 @@
 <link rel="stylesheet" type="text/css" href="todosStylesheet.css">
 <title>VanillaJS • TodoMVC</title>    
 </head>
-    
+    <body> 
 <h1>todos</h1>
+
+    <div class="container">
+        <div class="todo-list" id="item1">
+            <div class="check"></div>
+            <input class="todoText" type="text" placeholder="What needs to be done?">
+        </div>
+
+    </div>
+
+<div class="bottomBox">
+    <span id="todo-count">
+        <strong>1</strong> item left
+    </span> 
+    <span id="aac">
+        <strong>All  </strong> Active  Completed
+    </span> 
+                            <button id="ccBox">Clear completed (1)</button>
+</div>
     
-    <div class="bigbox" placeholder="What needs to be done?" autofocus>
-        <div class="box" id="item1"><div class="check"></div><div class="todoText">item 1</div></div>
-        <div class="box" id="item2"><div class="check"></div><div class="todoText">item 2</div></div>
-        <div class="box" id="item3"><div class="check"></div><div class="todoText">item 3</div></div>
-    <!--new "1 item left, All Active Completed, Clear completed (1) box-->
-<div class="bottomBox"><span id="todo-count"><strong>1</strong> item left</span> <span id="aac"><strong>All  </strong> Active  Completed</span> <button id="ccBox">Clear completed (1)</button></div>
-    
-<body>
+
     <div class="bottom">
     <p>Double-click to edit a todo</p>
     </div>
@@ -26,5 +37,10 @@
     </div>    
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
     <script src="./todos.js"></script>
-</body>
+    <script>
+            $(document).ready(function(){
+            app.init();
+})
+     </script>
+    </body>
 </html>

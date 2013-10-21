@@ -1,9 +1,21 @@
 var app = {
     init: function(){
-     $('.todo-list').on('click', '.toggle', app.toggleStatus);   
+     $('.todoText').on('keypress', app.newKeypress);
         
     },    
-    toggleStatus: function(ev) {
-     $(ev.target).closest('.todo-item').toggleClass('complete');   
+   newKeypress: function(ev){
+    if(ev.which === 13){
+        app.addNewItem($('.todoText').val());
     }
+   },
+   addNewItem: function(label, status){
+   console.log($('.templates .todo-item'));
+       var newItem = $('.templates .todo-item').clone();
+       newItem.find('label').text(label);
+       if(status === 'complete'){
+           newItem.addClass('complete');
+       }
+    newItem.appendTo('.todo-list');
+    $('.todoText').val('');
+   }
 }

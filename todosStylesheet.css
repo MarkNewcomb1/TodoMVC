@@ -62,13 +62,14 @@ text-shadow:-1px -1px rgba(0,0,0,0.2);
 .todoText{
     display: block;
     width: 80%;
-    height: 81%;
+    height: 48px;
     float:left;
 /*    background-color: white;*/
     background-color: #FBFAFA;
-    border-left: 7px double #e0bdc3;
     text-align: left;
     padding-left: 8px;
+    border: none;
+    border-left: 7px double #e0bdc3;
 }
 .bottomBox{
  height: 26px;
@@ -97,5 +98,16 @@ padding-left:6px;
 padding-right:6px;
 border-radius:3px;
 font-size:11px;
-
 }
+
+.hide{
+    display: none;
+}
+
+/*.templates{
+    margin-top: 50px;
+}
+
+.wide{
+    width:100%;
+}*/

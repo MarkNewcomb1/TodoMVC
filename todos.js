@@ -8,7 +8,7 @@ var app = {
         app.addNewItem($('.todoText').val());
     }
    },
-   addNewItem: function(label, status){
+  addNewItem: function(label, status){
    console.log($('.templates .todo-item'));
        var newItem = $('.templates .todo-item').clone();
        newItem.find('label').text(label);

@@ -15,7 +15,7 @@ var app = {
        if(status === 'complete'){
            newItem.addClass('complete');
        }
-    newItem.appendTo('.todo-list');
+    newItem.appendTo('.todoList');
     $('.todoText').val('');
    }
 }

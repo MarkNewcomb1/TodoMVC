@@ -16,6 +16,18 @@ body{
  text-decoration:underline; 
 }
 
+.bottom a{
+    color: #a6a6a6;
+}
+#aac a{
+    text-decoration:none;
+    color: black;
+    display: inline-block;
+    padding: 0px 6px;
+}
+
+
+
 h1{
 margin-bottom: 7px;
 font-size: 70px;
@@ -26,7 +38,7 @@ text-shadow:-1px -1px rgba(0,0,0,0.2);
 
 
     
-.todo-list{
+.todoList{
     height: 50px;
     /*padding: 10px;*/
     margin-left:auto;
@@ -88,7 +100,7 @@ body .bottom{
   color: #a6a6a6;
 }
 
-#todo-count{
+#todoCount{
 float:left;
 padding-left:6px;
 }

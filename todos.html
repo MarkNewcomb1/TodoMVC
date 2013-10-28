@@ -8,7 +8,7 @@
 <h1>todos</h1>
 
     <div class="container">
-        <div class="todo-list" id="item1">
+        <div class="todoList" id="item1">
             <div class="check"></div>
             <input class="todoText" type="text" placeholder="What needs to be done?">
         </div>
@@ -16,11 +16,13 @@
     </div>
 
 <div class="bottomBox">
-    <span id="todo-count">
+    <span id="todoCount">
         <strong>1</strong> item left
     </span> 
     <span id="aac">
-        <strong>All  </strong> Active  Completed
+        <a href="#">All</a> 
+        <a href="#">Active</a>  
+        <a href="#">Completed</a>
     </span> 
                             <button id="ccBox">Clear completed (1)</button>
 </div>
@@ -30,10 +32,10 @@
     <p>Double-click to edit a todo</p>
     </div>
     <div class="bottom">
-    <p>Created by <span class="underline">Oscar Godson</span></p>
+    <p>Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a></p>
     </div>
     <div class="bottom">
-    <p>Part of <span class="underline">TodoMVC</span></p>
+    <p>Part of <a href="http://todomvc.com/">TodoMVC</a></p>
     </div>    
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
     <script src="./todos.js"></script>
